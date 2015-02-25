@@ -1,0 +1,14 @@
+---
+:name: magentoce-test
+:git_url: git@github.com:inviqa/magentoce-test
+:seed:
+  :name: magento
+  :url: git@github.com:inviqa/hobo-seed-magento
+  :version: 106faaa
+:vm_ip: 10.70.131.15
+:hostname: magentoce-test.dev
+:asset_bucket: inviqa-assets-magentoce-test
+:vm:
+  :project_mount_path: "/vagrant"
+:magento_edition: community
+:magento_version: 1.9.0.1
