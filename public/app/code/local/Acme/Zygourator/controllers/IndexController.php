@@ -7,6 +7,6 @@ class Acme_Zygourator_IndexController extends Mage_Core_Controller_Front_Action
     {
         $finder = Mage::registry('container')->get('acme.product.finder');
 
-        var_dump($finder->findAll());
+        $products = $finder->findAll();
     }
 }
