@@ -19,6 +19,10 @@ class Finder
      * @var Catalog
      */
     private $catalog;
+    
+    /**
+     * @param Catalog $catalog
+     */
     public function __construct(Catalog $catalog)
     {
         $this->catalog = $catalog;
