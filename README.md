@@ -11,6 +11,18 @@ The services.yml contains an example of how the DI components factory methods ca
 
 The core domain logic can go into the "src/" folder. In the example a magento catalog collection is passed to a Finder as a dependency using a interface defined within the core domain, effectively decoupling the core domain from the framework.
 
+There is an one simple magento module set up that uses the container, with an example controller looking like this:
+```php
+class Acme_Zygourator_IndexController extends Mage_Core_Controller_Front_Action
+{
+    public function indexAction()
+    {
+        $finder = Mage::registry('container')->get('acme.product.finder');
+        $products = $finder->findAll();
+    }
+}
+```
+
 ## Clone the project
 
 Clone the project into your local file system:
