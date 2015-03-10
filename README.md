@@ -52,7 +52,7 @@ class Acme_Zygourator_IndexController extends Mage_Core_Controller_Front_Action
 Clone the project into your local file system:
 
 ```bash
-git clone git@github.com:inviqa/magentoce-test
+git clone git@github.com:jon-acker/magento-di-composer.git
 ```
 
 ## Install Dependencies
