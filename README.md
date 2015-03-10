@@ -27,6 +27,7 @@ class Finder
     {
         $this->catalog = $catalog;
     }
+    
     public function findAll()
     {
         return $this->catalog->getCollection();
