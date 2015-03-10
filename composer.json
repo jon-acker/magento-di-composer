@@ -3,22 +3,16 @@
         "php": ">=5.4.0"
     },
     "require-dev": {
-        "phpspec/phpspec": "dev-master#3bcf4e4ec83dc345d0fff7f22b0641a25403dcc9",
-        "phpspec/prophecy": "dev-master#82d11835df7eccf904ea0c84fbb7304080346bc1",
-        "magetest/magento-phpspec-extension": "dev-develop",
+        "phpspec/phpspec": "dev-master",
         "magetest/magento-behat-extension": "dev-feature/refactor",
         "behat/behat": "2.4.*@stable",
         "behat/mink-selenium2-driver": "*",
         "behat/mink-goutte-driver": "1.0.*",
         "squizlabs/php_codesniffer": "1.*",
-        "phpmd/phpmd": "1.*",
-        "sebastian/phpcpd": "2.*",
-        "pdepend/pdepend": "1.*",
-        "phploc/phploc": "2.*",
         "theseer/phpdox": "0.6.*",
         "theseer/fxsl": "1.0.*@dev",
-        "phpunit/phpunit": "3.7.*",
-        "covex-nn/phpcb": "1.0.*@dev"
+        "symfony/dependency-injection": "~2.3",
+        "symfony/yaml": "~2.3"
     },
     "config": {
         "bin-dir": "bin"
@@ -31,7 +25,8 @@
                 "public/app/code/community",
                 "public/app/code/core",
                 "public/app",
-                "public/lib"
+                "public/lib",
+                "src"
             ],
             "Mage" : "public/app/code/core"
         }

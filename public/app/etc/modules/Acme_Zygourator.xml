@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Acme_Zygourator>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Acme_Zygourator>
+    </modules>
+</config>
