@@ -3,7 +3,8 @@
         "php": ">=5.4.0"
     },
     "require-dev": {
-        "phpspec/phpspec": "dev-master",
+        "phpspec/phpspec": "2.1.0",
+        "magetest/magento-phpspec-extension": "dev-develop",
         "magetest/magento-behat-extension": "dev-feature/refactor",
         "behat/behat": "2.4.*@stable",
         "behat/mink-selenium2-driver": "*",
