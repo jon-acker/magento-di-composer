@@ -1,4 +1,4 @@
-# Magento with composer autloader and symfony DI container
+# Magento with composer autoloader and symfony DI container
 
 ## Background
 
