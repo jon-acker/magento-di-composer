@@ -7,7 +7,23 @@ This is a proof-of-concept/example of how Magento can be used with Composers aut
 In order to load dependencies before starting Magento, I moved index.php to index_mage.php and created a new index.php which loader tha autloader, builds and configures the DI container, and then calls index_mage.php
 The container, once built, is placed into Magento's registery.
 
-The services.yml contains an example of how the DI components factory methods can be used to turn Magento models into services that can be injected.
+The services.yml contains an example of how the DI components factory methods can be used to turn Magento models into services that can be injected:
+
+```yaml
+parameters: ~
+
+services:
+    acme.product.catalog:
+        class: Acme_Zygourator_Model_Catalog
+        factory_class: Mage
+        factory_method: getModel
+        arguments: [acme_zygourator/catalog]
+
+
+    acme.product.finder:
+        class: Product\Finder
+        arguments: [@acme.product.catalog]
+```
 
 The core domain logic can go into the "src/" folder. In the example a magento catalog collection is passed to a Finder as a dependency using a interface defined within the core domain, effectively decoupling the core domain from the framework:
 ```php
