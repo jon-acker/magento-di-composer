@@ -10,7 +10,7 @@ The container, once built, is placed into Magento's registery.
 The services.yml contains an example of how the DI components factory methods can be used to turn Magento models into services that can be injected.
 
 The core domain logic can go into the "src/" folder. In the example a magento catalog collection is passed to a Finder as a dependency using a interface defined within the core domain, effectively decoupling the core domain from the framework:
-```
+```php
 namespace Product;
 
 class Finder
