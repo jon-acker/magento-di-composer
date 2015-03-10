@@ -16,8 +16,6 @@ class Finder
 
     public function findAll()
     {
-        $collection = $this->catalog->getCollection();
-
-        return $collection->count();
+        return $this->catalog->getCollection();
     }
 }
