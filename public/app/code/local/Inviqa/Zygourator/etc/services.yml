@@ -1,0 +1,7 @@
+parameters: ~
+
+services:
+    acme.product.catalog:
+        class: Acme_Zygourator_Model_Catalog
+        factory: [Mage, getModel]
+        arguments: [acme_zygourator/catalog]
