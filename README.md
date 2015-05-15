@@ -1,4 +1,4 @@
-# Magento with composer autloader and symfony DI container
+# Magento with composer autoloader and symfony DI container
 
 ## Background
 
@@ -7,9 +7,49 @@ This is a proof-of-concept/example of how Magento can be used with Composers aut
 In order to load dependencies before starting Magento, I moved index.php to index_mage.php and created a new index.php which loader tha autloader, builds and configures the DI container, and then calls index_mage.php
 The container, once built, is placed into Magento's registery.
 
-The services.yml contains an example of how the DI components factory methods can be used to turn Magento models into services that can be injected.
+The services.yml contains an example of how the DI components factory methods can be used to turn Magento models into services that can be injected:
 
-The core domain logic can go into the "src/" folder. In the example a magento catalog collection is passed to a Finder as a dependency using a interface defined within the core domain, effectively decoupling the core domain from the framework.
+```yaml
+parameters: ~
+
+services:
+    acme.product.catalog:
+        class: Acme_Zygourator_Model_Catalog
+        factory_class: Mage
+        factory_method: getModel
+        arguments: [acme_zygourator/catalog]
+
+
+    acme.product.finder:
+        class: Product\Finder
+        arguments: [@acme.product.catalog]
+```
+
+The core domain logic can go into the "src/" folder. In the example a magento catalog collection is passed to a Finder as a dependency using a interface defined within the core domain, effectively decoupling the core domain from the framework:
+```php
+namespace Product;
+
+class Finder
+{
+    /**
+     * @var Catalog
+     */
+    private $catalog;
+    
+    /**
+     * @param Catalog $catalog
+     */
+    public function __construct(Catalog $catalog)
+    {
+        $this->catalog = $catalog;
+    }
+    
+    public function findAll()
+    {
+        return $this->catalog->getCollection();
+    }
+}
+```
 
 There is an one simple magento module set up that uses the container, with an example controller looking like this:
 ```php
@@ -28,7 +68,7 @@ class Acme_Zygourator_IndexController extends Mage_Core_Controller_Front_Action
 Clone the project into your local file system:
 
 ```bash
-git clone git@github.com:inviqa/magentoce-test
+git clone git@github.com:jon-acker/magento-di-composer.git
 ```
 
 ## Install Dependencies
