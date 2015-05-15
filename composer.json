@@ -1,26 +1,18 @@
 {
     "require": {
-        "php": ">=5.4.0"
+        "aydin-hassan/magento-core-composer-installer" : "~1.0",
+        "magento-hackathon/magento-composer-installer": "dev-feature/composer-autoloading",
+        "inviqa/magento-enterprise": "*",
+        "inviqa/magento-symfony-container": "dev-master"
     },
     "require-dev": {
-        "phpspec/phpspec": "2.1.0",
-        "magetest/magento-phpspec-extension": "dev-develop",
-        "magetest/magento-behat-extension": "dev-feature/refactor",
-        "behat/behat": "2.4.*@stable",
-        "behat/mink-selenium2-driver": "*",
-        "behat/mink-goutte-driver": "1.0.*",
-        "squizlabs/php_codesniffer": "1.*",
-        "theseer/phpdox": "0.6.*",
-        "theseer/fxsl": "1.0.*@dev",
-        "symfony/dependency-injection": "~2.3",
-        "symfony/yaml": "~2.3"
+        "phpspec/phpspec": "2.1.0"
     },
     "config": {
         "bin-dir": "bin"
     },
     "autoload": {
         "psr-0": {
-            "MageTest\\PhpSpec\\MagentoExtension": "src",
             "": [
                 "public/app/code/local",
                 "public/app/code/community",
@@ -31,5 +23,31 @@
             ],
             "Mage" : "public/app/code/core"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:inviqa/magento-composer-installer.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:AydinHassan/magento-community.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:inviqa/magento-enterprise.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:jon-acker/magento-symfony-container.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:jon-acker/symfony-container-builder.git"
+        }
+    ],
+    "extra": {
+        "magento-root-dir": "./public/"
+    },
+    "minimum-stability":"dev"
 }
