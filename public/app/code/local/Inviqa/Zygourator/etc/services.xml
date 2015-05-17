@@ -7,7 +7,8 @@
 
         <service id="acme.product.catalog" class="Inviqa_Zygourator_Model_Catalog">
             <factory class="Mage" method="getModel"/>
-            <argument>inviqa_zyourator/catalog</argument>
+            <argument>inviqa_zygourator/catalog</argument>
+            <tag name="magento.db.service"/>
         </service>
 
     </services>
