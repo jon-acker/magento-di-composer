@@ -27,19 +27,15 @@
     </modules>
     <global>
         <models>
-            <zygourator>
+            <inviqa_zygourator>
                 <class>Inviqa_Zygourator_Model</class>
-            </zygourator>
+            </inviqa_zygourator>
         </models>
         <helpers>
             <zygourator>
                 <class>Inviqa_Zygourator_Helper</class>
             </zygourator>
         </helpers>
-
-        <blocks>
-            <moneybookers><class>Inviqa_Zygourator_Block</class></moneybookers>
-        </blocks>
         <events>
             <magento_bootup>
                 <observers>

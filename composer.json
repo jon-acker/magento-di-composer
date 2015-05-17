@@ -43,7 +43,7 @@
         },
         {
             "type": "vcs",
-            "url": "git@github.com:jon-acker/symfony-container-builder.git"
+            "url": "git@github.com:jon-acker/symfony-container-generator.git"
         }
     ],
     "extra": {

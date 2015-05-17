@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "76fef9c096f67b496618c71984a9a3f7",
+    "hash": "7f6d43663358b9f7108fffb13e158db4",
     "packages": [
         {
             "name": "aydin-hassan/magento-core-composer-installer",
@@ -418,16 +418,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jon-acker/magento-symfony-container.git",
-                "reference": "6109f002d767b8ac5aa1792b6da6b2d7512ecb93"
+                "reference": "c99becced8b702932eb051f311be7b277c23643e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jon-acker/magento-symfony-container/zipball/6109f002d767b8ac5aa1792b6da6b2d7512ecb93",
-                "reference": "6109f002d767b8ac5aa1792b6da6b2d7512ecb93",
+                "url": "https://api.github.com/repos/jon-acker/magento-symfony-container/zipball/c99becced8b702932eb051f311be7b277c23643e",
+                "reference": "c99becced8b702932eb051f311be7b277c23643e",
                 "shasum": ""
             },
             "require": {
-                "inviqa/symfony-container-builder": "dev-master"
+                "inviqa/symfony-container-generator": "dev-master"
             },
             "type": "magento-module",
             "license": [
@@ -438,20 +438,20 @@
                 "source": "https://github.com/jon-acker/magento-symfony-container/tree/master",
                 "issues": "https://github.com/jon-acker/magento-symfony-container/issues"
             },
-            "time": "2015-05-15 15:01:57"
+            "time": "2015-05-17 15:20:46"
         },
         {
-            "name": "inviqa/symfony-container-builder",
+            "name": "inviqa/symfony-container-generator",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jon-acker/symfony-container-builder.git",
-                "reference": "b451e64ebcefb8f1c777631836203b38ef34e9d9"
+                "url": "https://github.com/jon-acker/symfony-container-generator.git",
+                "reference": "c903b91e4dca2c02e8cbd37f69638ebf9f37ecb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jon-acker/symfony-container-builder/zipball/b451e64ebcefb8f1c777631836203b38ef34e9d9",
-                "reference": "b451e64ebcefb8f1c777631836203b38ef34e9d9",
+                "url": "https://api.github.com/repos/jon-acker/symfony-container-generator/zipball/c903b91e4dca2c02e8cbd37f69638ebf9f37ecb7",
+                "reference": "c903b91e4dca2c02e8cbd37f69638ebf9f37ecb7",
                 "shasum": ""
             },
             "require": {
@@ -472,10 +472,10 @@
             },
             "description": "Generic Symfony DI Container Builder",
             "support": {
-                "source": "https://github.com/jon-acker/symfony-container-builder/tree/0.1.1",
-                "issues": "https://github.com/jon-acker/symfony-container-builder/issues"
+                "source": "https://github.com/jon-acker/symfony-container-generator/tree/master",
+                "issues": "https://github.com/jon-acker/symfony-container-generator/issues"
             },
-            "time": "2015-05-13 22:13:52"
+            "time": "2015-05-17 15:27:23"
         },
         {
             "name": "justinrainbow/json-schema",
