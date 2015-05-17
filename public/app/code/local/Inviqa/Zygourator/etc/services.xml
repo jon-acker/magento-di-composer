@@ -7,7 +7,7 @@
 
         <service id="acme.product.catalog" class="Inviqa_Zygourator_Model_Catalog">
             <factory class="Mage" method="getModel"/>
-            <argument>inviqa_zygourator/catalog</argument>
+            <argument>inviqa_zyourator/catalog</argument>
         </service>
 
     </services>
