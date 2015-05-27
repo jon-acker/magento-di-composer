@@ -11,5 +11,7 @@
             <tag name="magento.db.service"/>
         </service>
 
+        <service id="inviqa.product.processor" class="Product\Processor">
+        </service>
     </services>
 </container>

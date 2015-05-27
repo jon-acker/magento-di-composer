@@ -30,22 +30,28 @@
             <inviqa_zygourator>
                 <class>Inviqa_Zygourator_Model</class>
             </inviqa_zygourator>
+            <catalog_resource>
+                <rewrite>
+                    <product_collection>Inviqa_Zygourator_Model_Resource_Product_Collection</product_collection>
+                </rewrite>
+            </catalog_resource>
         </models>
+
         <helpers>
             <zygourator>
                 <class>Inviqa_Zygourator_Helper</class>
             </zygourator>
         </helpers>
         <events>
-            <magento_bootup>
+            <catalog_product_collection_load_after>
                 <observers>
                     <inviqa_zygourator_observer>
                         <type>singleton</type>
                         <class>Inviqa_Zygourator_Model_Observer</class>
-                        <method>handleStartup</method>
+                        <method>onProductCollectionLoadBefore</method>
                     </inviqa_zygourator_observer>
                 </observers>
-            </magento_bootup>
+            </catalog_product_collection_load_after>
         </events>
     </global>
     <frontend>

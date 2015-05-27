@@ -1,0 +1,6 @@
+<?php
+
+class Inviqa_Zygourator_Model_Resource_Product_Collection extends Mage_Catalog_Model_Resource_Product_Collection implements Product\ProductCollection
+{
+
+} 

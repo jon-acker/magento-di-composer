@@ -1,12 +1,12 @@
 {
     "require": {
         "aydin-hassan/magento-core-composer-installer" : "~1.0",
-        "magento-hackathon/magento-composer-installer": "dev-feature/composer-autoloading",
+        "magento-hackathon/magento-composer-installer": "*",
         "inviqa/magento-enterprise": "*",
         "inviqa/magento-symfony-container": "dev-master"
     },
     "require-dev": {
-        "phpspec/phpspec": "2.1.0"
+        "phpspec/phpspec": "2.2.0"
     },
     "config": {
         "bin-dir": "bin"
@@ -27,7 +27,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:inviqa/magento-composer-installer.git"
+            "url": "git@github.com:Cotya/magento-composer-installer.git"
         },
         {
             "type": "vcs",
@@ -39,11 +39,11 @@
         },
         {
             "type": "vcs",
-            "url": "git@github.com:jon-acker/magento-symfony-container.git"
+            "url": "git@github.com:inviqa/magento-symfony-container.git"
         },
         {
             "type": "vcs",
-            "url": "git@github.com:jon-acker/symfony-container-generator.git"
+            "url": "git@github.com:inviqa/symfony-container-generator.git"
         }
     ],
     "extra": {
