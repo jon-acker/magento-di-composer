@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f6d43663358b9f7108fffb13e158db4",
+    "hash": "529f74c440bee32ee558afea1efe309d",
     "packages": [
         {
             "name": "aydin-hassan/magento-core-composer-installer",
@@ -417,13 +417,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jon-acker/magento-symfony-container.git",
-                "reference": "c99becced8b702932eb051f311be7b277c23643e"
+                "url": "https://github.com/inviqa/magento-symfony-container.git",
+                "reference": "e86b099d2e22759cc858f2a6a63eb2d10633080b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jon-acker/magento-symfony-container/zipball/c99becced8b702932eb051f311be7b277c23643e",
-                "reference": "c99becced8b702932eb051f311be7b277c23643e",
+                "url": "https://api.github.com/repos/inviqa/magento-symfony-container/zipball/e86b099d2e22759cc858f2a6a63eb2d10633080b",
+                "reference": "e86b099d2e22759cc858f2a6a63eb2d10633080b",
                 "shasum": ""
             },
             "require": {
@@ -435,30 +435,30 @@
             ],
             "description": "Provides Magento with an instance of a Symfony DI Container",
             "support": {
-                "source": "https://github.com/jon-acker/magento-symfony-container/tree/master",
-                "issues": "https://github.com/jon-acker/magento-symfony-container/issues"
+                "source": "https://github.com/inviqa/magento-symfony-container/tree/master",
+                "issues": "https://github.com/inviqa/magento-symfony-container/issues"
             },
-            "time": "2015-05-17 15:20:46"
+            "time": "2015-05-21 12:03:58"
         },
         {
             "name": "inviqa/symfony-container-generator",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jon-acker/symfony-container-generator.git",
-                "reference": "c903b91e4dca2c02e8cbd37f69638ebf9f37ecb7"
+                "url": "https://github.com/inviqa/symfony-container-generator.git",
+                "reference": "45724ffa4cfacad9c3cfc97b2b69775b9a2d7d6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jon-acker/symfony-container-generator/zipball/c903b91e4dca2c02e8cbd37f69638ebf9f37ecb7",
-                "reference": "c903b91e4dca2c02e8cbd37f69638ebf9f37ecb7",
+                "url": "https://api.github.com/repos/inviqa/symfony-container-generator/zipball/45724ffa4cfacad9c3cfc97b2b69775b9a2d7d6c",
+                "reference": "45724ffa4cfacad9c3cfc97b2b69775b9a2d7d6c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
-                "symfony/config": "^2.6",
-                "symfony/dependency-injection": "3.0.*@dev",
-                "symfony/filesystem": "^2.6"
+                "symfony/config": "2.6",
+                "symfony/dependency-injection": "2.6",
+                "symfony/filesystem": "2.6"
             },
             "require-dev": {
                 "phpspec/phpspec": "^2.2"
@@ -472,10 +472,9 @@
             },
             "description": "Generic Symfony DI Container Builder",
             "support": {
-                "source": "https://github.com/jon-acker/symfony-container-generator/tree/master",
-                "issues": "https://github.com/jon-acker/symfony-container-generator/issues"
+                "source": "https://github.com/inviqa/symfony-container-generator/tree/master"
             },
-            "time": "2015-05-17 15:27:23"
+            "time": "2015-05-21 12:02:17"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -642,33 +641,31 @@
         },
         {
             "name": "symfony/config",
-            "version": "2.8.x-dev",
+            "version": "v2.6.0",
+            "target-dir": "Symfony/Component/Config",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "8555ecc6e2a47441b4be56dbfde5cea68c916755"
+                "reference": "9282bb7f3251a95478a7198534577c02ab30b6b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/8555ecc6e2a47441b4be56dbfde5cea68c916755",
-                "reference": "8555ecc6e2a47441b4be56dbfde5cea68c916755",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/9282bb7f3251a95478a7198534577c02ab30b6b6",
+                "reference": "9282bb7f3251a95478a7198534577c02ab30b6b6",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9",
-                "symfony/filesystem": "~2.3|~3.0.0"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "~2.7|~3.0.0"
+                "php": ">=5.3.3",
+                "symfony/filesystem": "~2.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
+                "psr-0": {
                     "Symfony\\Component\\Config\\": ""
                 }
             },
@@ -678,17 +675,17 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
                 },
                 {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Config Component",
-            "homepage": "https://symfony.com",
-            "time": "2015-05-12 15:16:46"
+            "homepage": "http://symfony.com",
+            "time": "2014-11-20 13:24:23"
         },
         {
             "name": "symfony/console",
@@ -749,26 +746,26 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "dev-master",
+            "version": "v2.6.0",
+            "target-dir": "Symfony/Component/DependencyInjection",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DependencyInjection.git",
-                "reference": "4fd50031b086e9425079d3ac7bb237630aec2618"
+                "reference": "20bc8737876e4a2222101749b5547fd5acc24e30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/4fd50031b086e9425079d3ac7bb237630aec2618",
-                "reference": "4fd50031b086e9425079d3ac7bb237630aec2618",
+                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/20bc8737876e4a2222101749b5547fd5acc24e30",
+                "reference": "20bc8737876e4a2222101749b5547fd5acc24e30",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/config": "~2.8|~3.0",
-                "symfony/expression-language": "~2.8|~3.0",
-                "symfony/phpunit-bridge": "~2.8|~3.0",
-                "symfony/yaml": "~2.8|~3.0"
+                "symfony/config": "~2.2",
+                "symfony/expression-language": "~2.4",
+                "symfony/yaml": "~2.0"
             },
             "suggest": {
                 "symfony/config": "",
@@ -778,11 +775,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
+                "psr-0": {
                     "Symfony\\Component\\DependencyInjection\\": ""
                 }
             },
@@ -792,46 +789,44 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
                 },
                 {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony DependencyInjection Component",
-            "homepage": "https://symfony.com",
-            "time": "2015-05-12 15:48:43"
+            "homepage": "http://symfony.com",
+            "time": "2014-11-28 10:00:40"
         },
         {
             "name": "symfony/filesystem",
-            "version": "2.8.x-dev",
+            "version": "v2.6.0",
+            "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "6c4f6245440b53e55d4b5d3c3bd98532d6c6e11e"
+                "reference": "6f7c7e42f20ee200d8ac5d2ec1d2a524138305e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/6c4f6245440b53e55d4b5d3c3bd98532d6c6e11e",
-                "reference": "6c4f6245440b53e55d4b5d3c3bd98532d6c6e11e",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/6f7c7e42f20ee200d8ac5d2ec1d2a524138305e0",
+                "reference": "6f7c7e42f20ee200d8ac5d2ec1d2a524138305e0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "~2.7|~3.0.0"
+                "php": ">=5.3.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
+                "psr-0": {
                     "Symfony\\Component\\Filesystem\\": ""
                 }
             },
@@ -841,17 +836,17 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
                 },
                 {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Filesystem Component",
-            "homepage": "https://symfony.com",
-            "time": "2015-05-12 15:16:46"
+            "homepage": "http://symfony.com",
+            "time": "2014-11-16 17:28:09"
         }
     ],
     "packages-dev": [
@@ -994,23 +989,23 @@
         },
         {
             "name": "phpspec/phpspec",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/phpspec.git",
-                "reference": "3d2ac6c2da3d7c1c42b966a39b0754bd055b4c60"
+                "reference": "9727d75919a00455433e867565bc022f0b985a39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/3d2ac6c2da3d7c1c42b966a39b0754bd055b4c60",
-                "reference": "3d2ac6c2da3d7c1c42b966a39b0754bd055b4c60",
+                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/9727d75919a00455433e867565bc022f0b985a39",
+                "reference": "9727d75919a00455433e867565bc022f0b985a39",
                 "shasum": ""
             },
             "require": {
-                "doctrine/instantiator": "~1.0,>=1.0.1",
+                "doctrine/instantiator": "^1.0.1",
                 "php": ">=5.3.3",
                 "phpspec/php-diff": "~1.0.0",
-                "phpspec/prophecy": "~1.1",
+                "phpspec/prophecy": "~1.4",
                 "sebastian/exporter": "~1.0",
                 "symfony/console": "~2.3",
                 "symfony/event-dispatcher": "~2.1",
@@ -1019,9 +1014,11 @@
                 "symfony/yaml": "~2.1"
             },
             "require-dev": {
-                "behat/behat": "~3.0",
+                "behat/behat": "^3.0.11",
                 "bossa/phpspec2-expect": "~1.0",
-                "symfony/filesystem": "~2.1"
+                "phpunit/phpunit": "~4.4",
+                "symfony/filesystem": "~2.1",
+                "symfony/process": "~2.1"
             },
             "suggest": {
                 "phpspec/nyan-formatters": "~1.0 – Adds Nyan formatters"
@@ -1032,7 +1029,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -1066,7 +1063,7 @@
                 "testing",
                 "tests"
             ],
-            "time": "2014-12-14 09:37:32"
+            "time": "2015-04-18 16:22:51"
         },
         {
             "name": "phpspec/prophecy",
@@ -1572,7 +1569,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "magento-hackathon/magento-composer-installer": 20,
         "inviqa/magento-symfony-container": 20
     },
     "prefer-stable": false,

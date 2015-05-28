@@ -3,3 +3,8 @@ vendor/
 .modman
 public/media
 public/var
+public/.gitignore
+tools/assets/
+tools/chef/Berksfile.lock
+tools/chef/cookbooks/
+tools/vagrant/.vagrant/
