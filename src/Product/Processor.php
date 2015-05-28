@@ -9,6 +9,7 @@ class Processor
     {
         foreach ($collection as $product) {
             $product->setName($product->getName() . ' Test');
+            $product->setPrice(9.99);
         }
     }
 
